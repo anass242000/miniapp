@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import { useState, useEffect } from "react";
-import App from "@/components/pages/app";
 import { APP_URL } from "@/lib/constants";
 
 const frame = {
@@ -31,6 +30,7 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
+// Monad XP Tracker Component
 const MonadXPTracker = () => {
   const [users, setUsers] = useState([]);
   const [rank, setRank] = useState(null);
